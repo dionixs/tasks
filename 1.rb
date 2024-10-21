@@ -10,14 +10,19 @@ while i < arr.length
   i += 1
 end
 
+
+i = 0
+
 until i > arr.length
   puts arr[i]
 
   i += 1
 end
 
+
 for i in 1..10
   puts i
 end
+
 
 arr.each { |i| puts i }
