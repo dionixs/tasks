@@ -7,3 +7,12 @@ loop do
   i += 1
   break if i == arr.length
 end
+
+str = 'hello'
+i = 0
+
+while i < str.length
+  puts "#{str[i]} -> #{i}"
+  i += 1
+  break if i == str.length
+end
