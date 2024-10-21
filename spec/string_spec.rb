@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'rspec'
-require_relative './4.rb'
+require_relative '.././4.rb'
 
 RSpec.describe '' do
 
