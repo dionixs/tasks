@@ -1,20 +1,29 @@
-
 def compare?(str1, str2)
-  arr = []
-  c = nil
-  for i in 0...str1.length
-    if str1[i] == str2[i]
-      c = true
-      arr << c
-    else
-      c = false
-      break
+  return false if my_size(str1) != my_size(str2)
+
+  i = 0
+
+  while i < str1.length
+    unless str1[i] == str2[i]
+      return false
     end
+    i += 1
   end
-  c
+  true
+end
+
+def my_size(str)
+  i = 0
+  item = str[0]
+  while item != str[-1]
+    item = str[i]
+    i += 1
+  end
+  i
 end
 
 str1 = 'hello1'
 str2 = 'hello'
 
-p compare?(str1, str2)
+puts my_size(str2)
+puts compare?(str1, str2)

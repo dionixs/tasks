@@ -3,36 +3,36 @@
 require 'rspec'
 require_relative './4.rb'
 
-RSpec.describe String do
+RSpec.describe '' do
 
   let(:str) { 'hello' }
 
   context '#my_first' do
     it 'succeeds' do
-      expect(str.my_first).to eq str[0]
+      expect(my_first_for_str(str)).to eq str[0]
     end
   end
 
   context '#my_last' do
     it 'succeeds' do
-      expect(str.my_last).to eq str[-1]
+      expect(my_last_for_str(str)).to eq str[-1]
     end
   end
 end
 
-RSpec.describe Array do
+RSpec.describe '' do
 
   let(:arr) { Array(1..10) }
 
   context '#my_first' do
     it 'succeeds' do
-      expect(arr.my_first).to eq 1
+      expect(my_first_for_arr(arr)).to eq 1
     end
   end
 
   context '#my_last' do
     it 'succeeds' do
-      expect(arr.my_last).to eq 10
+      expect(my_last_for_arr(arr)).to eq 10
     end
   end
 end

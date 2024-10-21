@@ -20,7 +20,7 @@ until i > arr.length
 end
 
 
-for i in 1..10
+for i in arr
   puts i
 end
 

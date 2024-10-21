@@ -12,27 +12,47 @@ hh = {
 
 user_input = gets.strip.capitalize
 
-if hh.has_key?(user_input)
-  puts hh[user_input]
-else
-  puts 'Ошибка!'
-end
+day_week = if user_input == 'Monday'
+             'понедельник'
+           elsif user_input == 'Tuesday'
+             'вторник'
+           elsif user_input == 'Wednesday'
+             'среда'
+           elsif user_input == 'Thursday'
+             'четверг'
+           elsif user_input == 'Friday'
+             'пятница'
+           elsif user_input == 'Saturday'
+             'суббота'
+           elsif user_input == 'Sunday'
+             'воскресенье'
+           else
+             'Неизвестный день недели!'
+           end
 
-case user_input
-when 'Monday'
-  hh[user_input]
-when 'Tuesday'
-  hh[user_input]
-when 'Wednesday'
-  hh[user_input]
-when 'Thursday'
-  hh[user_input]
-when 'Friday'
-  hh[user_input]
-when 'Saturday'
-  hh[user_input]
-when 'Sunday'
-  hh[user_input]
-else
-  puts 'Ошибка!'
-end
+puts day_week
+
+day_week = hh[user_input] || 'Неизвестный день недели!'
+
+puts day_week
+
+day_week = case user_input
+           when 'Monday'
+             'понедельник'
+           when 'Tuesday'
+             'вторник'
+           when 'Wednesday'
+             'среда'
+           when 'Thursday'
+             'четверг'
+           when 'Friday'
+             'пятница'
+           when 'Saturday'
+             'суббота'
+           when 'Sunday'
+             'воскресенье'
+           else
+             'Неизвестный день недели!'
+           end
+
+puts day_week
