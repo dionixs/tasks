@@ -13,17 +13,20 @@ def compare?(str1, str2)
 end
 
 def my_size(str)
+  return 0 if str == ''
   i = 0
-  item = str[0]
-  while item != str[-1]
-    item = str[i]
-    i += 1
+  loop do
+    str[i] ? i += 1 : break
   end
   i
 end
 
 str1 = 'hello1'
 str2 = 'hello'
+str3 = 'A'
 
 puts my_size(str2)
 puts compare?(str1, str2)
+puts compare?(str1, str1)
+puts my_size(str3)
+puts compare?(str2, str3)
