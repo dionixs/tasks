@@ -1,8 +1,12 @@
-i = 1
-j = 25
-
-while i <= j
-  arr = Array(1..i)
-  puts arr.join(' ')
-  i += 1
+def print_number_triangle(n)
+  i = 1
+  arr = [1]
+  while i <= n
+    puts arr.join(' ')
+    i += 1
+    arr << i
+  end
 end
+
+
+print_number_triangle(5)
