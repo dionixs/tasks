@@ -13,11 +13,11 @@ def compare?(str1, str2)
 end
 
 def my_size(str)
-  return 0 if str == ''
   i = 0
-  loop do
-    str[i] ? i += 1 : break
-  end
+
+  return i if str == ''
+
+  loop { str[i] ? i += 1 : break }
   i
 end
 
