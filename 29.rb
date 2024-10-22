@@ -6,7 +6,7 @@ def calculator(a, b, operator)
   elsif operator == "*"
     a * b
   elsif operator == "/"
-    a / b
+    b == 0 ? 'На ноль делить нельзя!' : a / b
   elsif operator == "%"
     a % b
   else
@@ -14,12 +14,7 @@ def calculator(a, b, operator)
   end
 end
 
-loop do
-  print '> '
-  user_input = gets.strip.split(' ')
-  a = user_input[0].to_i
-  b = user_input[-1].to_i
-  operator = user_input[-2]
-
-  puts calculator(a, b, operator)
-end
+a = 2
+b = 2
+operator = '+'
+puts calculator(a, b, operator)
