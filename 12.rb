@@ -5,7 +5,7 @@ def middle_el(str)
 
   return if size <= 2
 
-  if size.even?
+  if size % 2 == 0
     index = (size / 2) - 1
     return str[index]
   else

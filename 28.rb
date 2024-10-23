@@ -3,7 +3,7 @@
 def boom(n)
   i = n
   while i >= 0
-    if i.zero?
+    if i == 0
       puts 'Boom!'
     elsif i == 3
       puts 'Скоро взрыв!'

@@ -4,11 +4,11 @@ def fizzbuzz
   i = 0
   while i != 100
     i += 1
-    if (i % 3).zero? && (i % 5).zero?
+    if (i % 3) == 0 && (i % 5) == 0
       puts 'FizzBuzz'
-    elsif (i % 3).zero?
+    elsif (i % 3) == 0
       puts 'Fizz'
-    elsif (i % 5).zero?
+    elsif (i % 5) == 0
       puts 'Buzz'
     else
       puts i

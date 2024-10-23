@@ -9,7 +9,7 @@ def calculator(a, b, operator)
   when '*'
     a * b
   when '/'
-    b.zero? ? 'На ноль делить нельзя!' : a / b
+    b == 0 ? 'На ноль делить нельзя!' : a / b
   when '%'
     a % b
   else
