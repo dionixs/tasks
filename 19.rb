@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-def all_palindromes(arr)
-  return if arr.nil?
+def palindromes(str)
+  return if str.size <= 1
 
+  arr = str.split
   i = 0
   j = 0
   new_arr = []
@@ -21,5 +22,5 @@ def all_palindromes(arr)
   new_arr
 end
 
-arr = %w[стол казак топот книга игра level]
-puts all_palindromes(arr).inspect
+str = 'стол казак топот книга игра level'
+puts palindromes(str).inspect # -> ["казак", "топот", "level"]
