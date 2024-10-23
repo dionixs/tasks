@@ -7,24 +7,25 @@ hh = {
   'Thursday' => 'четверг',
   'Friday' => 'пятница',
   'Saturday' => 'суббота',
-  'Sunday' => 'воскресенье',
+  'Sunday' => 'воскресенье'
 }
 
 user_input = gets.strip.capitalize
 
-day_week = if user_input == 'Monday'
+day_week = case user_input
+           when 'Monday'
              'понедельник'
-           elsif user_input == 'Tuesday'
+           when 'Tuesday'
              'вторник'
-           elsif user_input == 'Wednesday'
+           when 'Wednesday'
              'среда'
-           elsif user_input == 'Thursday'
+           when 'Thursday'
              'четверг'
-           elsif user_input == 'Friday'
+           when 'Friday'
              'пятница'
-           elsif user_input == 'Saturday'
+           when 'Saturday'
              'суббота'
-           elsif user_input == 'Sunday'
+           when 'Sunday'
              'воскресенье'
            else
              'Неизвестный день недели!'

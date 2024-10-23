@@ -1,13 +1,16 @@
+# frozen_string_literal: true
+
 def calculator(a, b, operator)
-  if operator == "+"
+  case operator
+  when '+'
     a + b
-  elsif operator == "-"
+  when '-'
     a - b
-  elsif operator == "*"
+  when '*'
     a * b
-  elsif operator == "/"
-    b == 0 ? 'На ноль делить нельзя!' : a / b
-  elsif operator == "%"
+  when '/'
+    b.zero? ? 'На ноль делить нельзя!' : a / b
+  when '%'
     a % b
   else
     'Ошибка! Введите коррекнтные значения или оператор!'

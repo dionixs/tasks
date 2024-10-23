@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def my_sum(arr)
   i = 0
   sum = 0

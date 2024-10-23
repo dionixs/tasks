@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def my_first_for_str(obj)
   return if obj.class != String
 

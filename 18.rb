@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def reverse(str)
   return if str.length < 2
 

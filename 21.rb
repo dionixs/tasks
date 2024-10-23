@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def range(num1, num2)
   i = num1
   while i <= num2

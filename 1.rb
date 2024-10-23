@@ -10,7 +10,6 @@ while i < arr.length
   i += 1
 end
 
-
 i = 0
 
 until i > arr.length
@@ -19,10 +18,7 @@ until i > arr.length
   i += 1
 end
 
-
-for i in arr
+arr.each do |i|
+  puts i
   puts i
 end
-
-
-arr.each { |i| puts i }

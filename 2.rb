@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def print_uppercase_characters(str)
   i = 0
   while i < str.length

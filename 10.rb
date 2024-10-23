@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 hh = {
   'Январь' => 1,
   'Февраль' => 2,
@@ -10,36 +12,37 @@ hh = {
   'Сентябрь' => 9,
   'Октябрь' => 10,
   'Ноябрь' => 11,
-  'Декабрь' => 12,
+  'Декабрь' => 12
 }
 
 str = 'Май'
 
 hh[str] || 'Неизвестный месяц'
 
-if str == 'Январь'
+case str
+when 'Январь'
   1
-elsif str == 'Февраль'
+when 'Февраль'
   2
-elsif str == 'Март'
+when 'Март'
   3
-elsif str == 'Апрель'
+when 'Апрель'
   4
-elsif str == 'Май'
+when 'Май'
   5
-elsif str == 'Июнь'
+when 'Июнь'
   6
-elsif str == 'Июль'
+when 'Июль'
   7
-elsif str == 'Август'
+when 'Август'
   8
-elsif str == 'Сентябрь'
+when 'Сентябрь'
   9
-elsif str == 'Октябрь'
+when 'Октябрь'
   10
-elsif str == 'Ноябрь'
+when 'Ноябрь'
   11
-elsif str =='Декабрь'
+when 'Декабрь'
   12
 else
   'Неизвестный месяц'

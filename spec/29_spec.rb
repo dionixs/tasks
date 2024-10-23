@@ -1,6 +1,7 @@
 # frozen_string_literal: true
+
 require 'rspec'
-require_relative '.././29.rb'
+require_relative '.././29'
 
 RSpec.describe '#calculator' do
   it '2 + 2' do

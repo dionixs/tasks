@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 
 def all_palindromes(arr)
   return if arr.nil?
@@ -14,9 +15,7 @@ def all_palindromes(arr)
       reverse << letter if letter
       j -= 1
     end
-    if reverse.join == word
-      new_arr << word
-    end
+    new_arr << word if reverse.join == word
     i += 1
   end
   new_arr

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 arr = Array(1..10)
 
 i = 0

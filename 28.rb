@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 def boom(n)
   i = n
   while i >= 0
-    if i == 0
+    if i.zero?
       puts 'Boom!'
     elsif i == 3
       puts 'Скоро взрыв!'

@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 def pyramid(n)
   return if n < 1
+
   i = 1
   until i > n
     n_str = i.to_s
-    puts '   ' * (2 * n - i) + "* #{n_str} " * (2 * i - 1) + "* "
+    puts "#{'   ' * (2 * n - i)}#{"* #{n_str} " * (2 * i - 1)}* "
     i += 1
   end
 end

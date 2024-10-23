@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 require 'rspec'
-require_relative '.././24.rb'
+require_relative '.././24'
 
 RSpec.describe '#max_sequence' do
   it 'return [3, 3, 3]' do

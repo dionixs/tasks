@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Array
   def max_sequence
     i = 0
@@ -6,12 +8,10 @@ class Array
     while i < length
       current_number = self[i]
       prev_number = self[i - 1]
-      if i == 0 || current_number == prev_number
+      if i.zero? || current_number == prev_number
         current_sequence << current_number
       else
-        if current_sequence.length > max_sequence.length
-          max_sequence = current_sequence
-        end
+        max_sequence = current_sequence if current_sequence.length > max_sequence.length
         current_sequence = [current_number]
       end
       i += 1

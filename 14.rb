@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 def num_pyramid(n)
   return if n < 1
+
   i = 1
   until i > n
     n_str = i.to_s

@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 require 'rspec'
-require_relative '.././11.rb'
+require_relative '.././11'
 
 RSpec.describe '#swap_chars' do
   it 'swaps first and last character for a valid string' do

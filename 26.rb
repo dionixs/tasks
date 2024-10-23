@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Array
   def my_slice(n = 3)
     i = 0
@@ -19,7 +21,7 @@ class String
     j = n - 1
     k = 0
     while i < length
-      yield self.split('')[k..j]
+      yield split('')[k..j]
       i += 1
       j += n
       k += n

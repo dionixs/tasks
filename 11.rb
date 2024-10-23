@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 
 def swap_chars(str, first_char, last_char)
   return str if str.size < 2

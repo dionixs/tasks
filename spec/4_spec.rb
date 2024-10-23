@@ -1,10 +1,9 @@
 # frozen_string_literal: true
 
 require 'rspec'
-require_relative '.././4.rb'
+require_relative '.././4'
 
 RSpec.describe '' do
-
   let(:str) { 'hello' }
 
   context '#my_first' do
@@ -21,7 +20,6 @@ RSpec.describe '' do
 end
 
 RSpec.describe '' do
-
   let(:arr) { Array(1..10) }
 
   context '#my_first' do

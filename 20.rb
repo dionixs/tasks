@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 def number_is(arr)
   i = 0
   while i < arr.length
     item = arr[i]
-    if item == 0
+    if item.zero?
       puts 'number is zero'
-    elsif item > 0
+    elsif item.positive?
       puts 'number is positive'
     else
       puts 'number is negative'
@@ -12,7 +14,6 @@ def number_is(arr)
     i += 1
   end
 end
-
 
 arr = [1, -1, 0, 56, 100, 45, 2, 10, 3]
 

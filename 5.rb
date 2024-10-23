@@ -1,12 +1,13 @@
+# frozen_string_literal: true
+
 def compare?(str1, str2)
   return false if my_size(str1) != my_size(str2)
 
   i = 0
 
   while i < str1.length
-    unless str1[i] == str2[i]
-      return false
-    end
+    return false unless str1[i] == str2[i]
+
     i += 1
   end
   true
