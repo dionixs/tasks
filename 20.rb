@@ -6,7 +6,7 @@ def number_is(arr)
     item = arr[i]
     if item.zero?
       puts 'number is zero'
-    elsif item.positive?
+    elsif item i > 0
       puts 'number is positive'
     else
       puts 'number is negative'

@@ -19,30 +19,29 @@ str = 'Май'
 
 hh[str] || 'Неизвестный месяц'
 
-case str
-when 'Январь'
+if str == 'Январь'
   1
-when 'Февраль'
+elsif str == 'Февраль'
   2
-when 'Март'
+elsif str == 'Март'
   3
-when 'Апрель'
+elsif str == 'Апрель'
   4
-when 'Май'
+elsif str == 'Май'
   5
-when 'Июнь'
+elsif str == 'Июнь'
   6
-when 'Июль'
+elsif str == 'Июль'
   7
-when 'Август'
+elsif str == 'Август'
   8
-when 'Сентябрь'
+elsif str == 'Сентябрь'
   9
-when 'Октябрь'
+elsif str == 'Октябрь'
   10
-when 'Ноябрь'
+elsif str == 'Ноябрь'
   11
-when 'Декабрь'
+elsif str =='Декабрь'
   12
 else
   'Неизвестный месяц'
