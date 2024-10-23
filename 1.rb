@@ -18,7 +18,8 @@ until i > arr.length
   i += 1
 end
 
-arr.each do |i|
-  puts i
+for i in arr
   puts i
 end
+
+arr.each { |i| puts i }
