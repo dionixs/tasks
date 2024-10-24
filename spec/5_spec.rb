@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 require 'rspec'
-require_relative '.././5.rb'
+require_relative '.././5'
 
 RSpec.describe 'StringComparison' do
   it 'returns true for equal strings' do

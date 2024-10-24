@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 char = '*'
 
 i = 0
